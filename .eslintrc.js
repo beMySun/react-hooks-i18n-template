@@ -1,0 +1,142 @@
+module.exports = {
+  extends: [
+    'plugin:ssc/ts-react',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:@typescript-eslint/recommended',
+  ],
+  env: {
+    browser: true,
+    es6: true,
+  },
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
+    JSX: 'readonly',
+  },
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 2018,
+    sourceType: 'module',
+  },
+  plugins: [
+    'react',
+    'react-hooks',
+    'typescript'
+  ],
+  parser: '@typescript-eslint/parser',
+  settings: {
+    'import/resolver': {
+      webpack:{
+        config: 'webpack.config.js'
+      }
+    }
+  },
+  rules: {
+    'max-len': [2, 130, 2],
+    'react-hooks/rules-of-hooks': 'error',
+    'react/jsx-filename-extension': 'off',
+    'react/jsx-props-no-spreading':'off',
+    'semi': ['error', 'always'],
+    'react/prop-types': 'off',
+    'react/destructuring-assignment': 'off',
+    'import/no-extraneous-dependencies': 'off',
+    'react/button-has-type': 'off',
+    'no-console': 'off',
+    'global-require': 'off',
+    'no-debugger': 'warn',
+    'camelcase': 'off',
+    'no-restricted-syntax': 'off',
+    'react/state-in-constructor': 'off',
+    'import/no-unresolved':'off',
+    '@typescript-eslint/no-empty-function':'off',
+    'react/jsx-curly-newline': 'off',
+    'react/jsx-key': ['error', { 'checkFragmentShorthand': true }],
+    'import/extensions': [
+      'error',
+      'always',
+      {
+        'js': 'never',
+        'jsx': 'never',
+        'ts': 'never',
+        'tsx': 'never',
+        '.d.ts': 'never',
+      },
+    ],
+    'import/order': ['error', {
+      'groups': ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
+      'pathGroups': [
+        {
+          'pattern': '@/**',
+          'group': 'internal'
+        }
+      ]
+    }],
+    'object-curly-newline': 0,
+    'no-underscore-dangle': 0,
+    'implicit-arrow-linebreak': 0,
+    '@typescript-eslint/array-type': [2, { default: 'array-simple' }],
+    '@typescript-eslint/camelcase': 0,
+    '@typescript-eslint/explicit-function-return-type': 0,
+    '@typescript-eslint/indent': [2, 2],
+    '@typescript-eslint/no-explicit-any': 0,
+    '@typescript-eslint/explicit-member-accessibility': [2, { accessibility: 'off' }],
+    '@typescript-eslint/no-object-literal-type-assertion': 0,
+    '@typescript-eslint/no-unused-vars': [2, { argsIgnorePattern: '^_' }],
+    '@typescript-eslint/no-var-requires': 0,
+    '@typescript-eslint/restrict-plus-operands': 0,
+    'arrow-parens': 0,
+    'arrow-spacing': [2, { before: true, after: true }],
+    'comma-dangle': 'off',
+    'comma-spacing': [2, { before: false, after: true }],
+    'func-call-spacing': [2, 'never'],
+    'jsx-quotes': [2, 'prefer-double'],
+    'key-spacing': [2, { beforeColon: false, afterColon: true }],
+    'keyword-spacing': [2, { before: true, after: true }],
+    'no-case-declarations': 0,
+    'no-mixed-operators': 0,
+    'no-multi-spaces': 2,
+    'no-prototype-builtins': 0,
+    'no-trailing-spaces': 2,
+    'no-useless-concat': 2,
+    'prefer-template': 2,
+    'quotes': [2, 'single'],
+    'react-hooks/exhaustive-deps': 2,
+    'react-hooks/rules-of-hooks': 2,
+    'react/display-name': 0,
+    'react/jsx-closing-tag-location': 2,
+    'react/jsx-curly-spacing': [2, { when: 'never' }],
+    'react/jsx-first-prop-new-line': [2, 'multiline'],
+    'react/jsx-fragments': [2, 'syntax'],
+    'react/jsx-indent-props': [2, 2],
+    'react/jsx-tag-spacing': [2, {
+      beforeClosing: 'never',
+      beforeSelfClosing: 'always',
+      closingSlash: 'never',
+      afterOpening: 'never',
+    }],
+    'react/jsx-wrap-multilines': [2, {
+      declaration: 'parens',
+      assignment: 'parens',
+      return: 'parens',
+      arrow: 'parens',
+      condition: 'parens',
+      logical: 'parens',
+      prop: 'parens',
+    }],
+    'react/prop-types': 0,
+    'no-nested-ternary': 'off',
+    'react/self-closing-comp': [2, { component: true, html: true }],
+    'rest-spread-spacing': [2, 'never'],
+    'space-before-blocks': [2, 'always'],
+    'space-before-function-paren': [2, {
+      anonymous: 'always',
+      named: 'never',
+      asyncArrow: 'always',
+    }],
+    'space-in-parens': [2, 'never'],
+    'space-infix-ops': 2,
+    'space-unary-ops': [2, { words: true, nonwords: false }],
+  },
+};

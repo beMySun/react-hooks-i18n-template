@@ -1,0 +1,112 @@
+// layout sizes
+@layout-size-header: 60px;
+@layout-size-sider: 200px;
+@layout-size-content: 1104px;
+@layout-size-content-full: 1264px;
+@layout-size-gap: 16px;
+@layout-size-gap-large: 24px;
+@layout-size-grid-width: 64px;
+
+// basic colors
+@color-primary: #ee4d2d;
+@color-success: #5c7;
+@color-warning: #ffbf00;
+@color-info: #2673dd;
+@color-link: #2673dd;
+@color-error: #ff4742;
+@color-danger: #ff4742;
+
+// mask colors
+@color-mask-alpha: rgba(0, 0, 0, 0.5);
+@color-mask-hover: rgba(0, 0, 0, 0.04);
+@color-mask-focus: rgba(0, 0, 0, 0.08);
+@color-mask-active: rgba(0, 0, 0, 0.08);
+
+// extended colors
+@color-primary-hover: #d55639;
+@color-primary-active: #cd5236;
+@color-primary-focus: @color-primary-active;
+@color-success-hover: overlay(@color-mask-hover, @color-success);
+@color-success-active: overlay(@color-mask-active, @color-success);
+@color-success-focus: @color-success-active;
+@color-warning-hover: overlay(@color-mask-hover, @color-warning);
+@color-warning-active: overlay(@color-mask-active, @color-warning);
+@color-warning-focus: @color-warning-active;
+@color-info-hover: #0046ab; // provided by UI spec
+@color-info-active: overlay(@color-mask-active, @color-info);
+@color-info-focus: @color-info-active;
+@color-link-hover: #0046ab; // provided by UI spec
+@color-link-active: overlay(@color-mask-active, @color-info);
+@color-link-focus: @color-link-active;
+@color-error-hover: overlay(@color-mask-hover, @color-error);
+@color-error-active: overlay(@color-mask-active, @color-error);
+@color-error-focus: @color-error-active;
+@color-danger-hover: overlay(@color-mask-hover, @color-danger);
+@color-danger-active: overlay(@color-mask-active, @color-danger);
+@color-danger-focus: @color-danger-active;
+
+// text colors
+@color-text-main: #333;
+@color-text-secondary: #666;
+@color-text-hint: #999;
+@color-text-placeholder: #b7b7b7;
+@color-text-disabled: #b7b7b7;
+@color-text-cyan: #1baf9d;
+@color-text-gold: #eda500;
+
+// background colors
+@color-bg-global: #f6f6f6;
+@color-bg-success: #ebf9ef;
+@color-bg-warning: #fff7e0;
+@color-bg-info: #e5eefb;
+@color-bg-error: #ffe9e8;
+@color-bg-danger: #ffe9e8;
+@color-bg-hint: #eee;
+@color-bg-thead: #fafafa;
+@color-bg-disabled: #d8d8d8;
+@color-bg-disabled-primary: lighten(@color-primary, 30%);
+@color-bg-disabled-success: lighten(@color-success, 30%);
+@color-bg-disabled-warning: lighten(@color-warning, 30%);
+@color-bg-disabled-link: lighten(@color-link, 30%);
+@color-bg-disabled-error: lighten(@color-error, 30%);
+@color-bg-disabled-danger: lighten(@color-danger, 30%);
+
+// border colors
+@color-border-main: #e5e5e5;
+@color-border-secondary: #eee;
+@color-border-dash: #d8d8d8;
+@color-border-button: #d8d8d8;
+@color-border-disabled: #d8d8d8;
+
+// font-weight specification
+// https://docs.microsoft.com/en-us/typography/opentype/spec/os2#usweightclass
+@font-weight-thin: 100;
+@font-weight-extra-light: 200;
+@font-weight-ultra-light: 200;
+@font-weight-light: 300;
+@font-weight-normal: 400;
+@font-weight-regular: 400;
+@font-weight-medium: 500;
+@font-weight-semi-bold: 600;
+@font-weight-demi-bold: 600;
+@font-weight-bold: 700;
+@font-weight-extra-bold: 800;
+@font-weight-ultra-bold: 800;
+@font-weight-black: 900;
+@font-weight-heavy: 900;
+
+// font-family config
+@font-family-normal: Roboto;
+
+// fonts
+// syntax: [font-weight] [font-size]/[line-height] [font-family]
+// https://developer.mozilla.org/en-US/docs/Web/CSS/font#live_sample
+@font-headline-extra-large: @font-weight-bold 30px/32px @font-family-normal;
+@font-headline-large: @font-weight-bold 26px/28px @font-family-normal;
+@font-headline-main: @font-weight-bold 22px/24px @font-family-normal;
+@font-headline-modal: @font-weight-medium 20px/22px @font-family-normal;
+@font-headline-card: @font-weight-bold 18px/20px @font-family-normal;
+@font-headline-card-secondary: @font-weight-medium 16px/18px @font-family-normal;
+@font-normal: @font-weight-regular 14px/18px @font-family-normal;
+@font-normal-loose: @font-weight-regular 14px/20px @font-family-normal;
+@font-hint: @font-weight-regular 12px/14px @font-family-normal;

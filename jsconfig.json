@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": false,
+    "baseUrl": "../",
+    "paths": {
+      "root/*": ["wms-lite-fe/*"],
+    }
+  },
+  "exclude": ["node_modules", "dist"]
+}
