@@ -73,11 +73,13 @@ const plugins = [
 ];
 
 if (process.env.ANALYSE) {
-  plugins.push(new BundleAnalyzerPlugin({
-    analyzerMode: 'server',
-    generateStatsFile: true,
-    statsOptions: { source: false },
-  }));
+  plugins.push(
+    new BundleAnalyzerPlugin({
+      analyzerMode: 'server',
+      generateStatsFile: true,
+      statsOptions: { source: false },
+    })
+  );
 }
 
 if (NODE_ENV !== 'production') {
@@ -85,10 +87,6 @@ if (NODE_ENV !== 'production') {
 }
 
 const entry = ['@babel/polyfill', './src/index.tsx'];
-
-// if (NODE_ENV !== 'production') {
-//   entry.unshift('react-hot-loader/patch');
-// }
 
 const smp = new SpeedMeasurePlugin();
 
@@ -172,11 +170,13 @@ module.exports = smp.wrap({
         loader: 'ts-loader',
         options: {
           getCustomTransformers: () => ({
-            before: [tsImportPluginFactory({
-              libraryName: 'antd',
-              libraryDirectory: 'lib',
-              style: true,
-            })],
+            before: [
+              tsImportPluginFactory({
+                libraryName: 'antd',
+                libraryDirectory: 'lib',
+                style: true,
+              }),
+            ],
           }),
           compilerOptions: require('./tsconfig.json').compilerOptions,
         },
@@ -191,8 +191,8 @@ module.exports = smp.wrap({
           {
             loader: 'postcss-loader',
             options: {
-              plugins: () => [autoprefixer()]
-            }
+              plugins: () => [autoprefixer()],
+            },
           },
           {
             loader: 'less-loader',
@@ -281,12 +281,13 @@ module.exports = smp.wrap({
     proxy: [
       {
         context: ['/api'],
-        target: 'xxx',
+        target: 'your_config',
         changeOrigin: true,
         onProxyRes(proxyRes, _, res) {
           const cookies = proxyRes.headers['set-cookie'] || [];
           const re = /domain=[\w.]+;/i;
-          const newCookie = cookies.map(cookie => cookie.replace(re, 'Domain=localhost;'));
+          const newCookie = cookies.map((cookie) =>
+            cookie.replace(re, 'Domain=localhost;'));
           res.writeHead(proxyRes.statusCode, {
             ...proxyRes.headers,
             'set-cookie': newCookie,

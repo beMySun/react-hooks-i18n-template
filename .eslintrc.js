@@ -1,12 +1,13 @@
 module.exports = {
   extends: [
-    'plugin:ssc/ts-react',
+    '@typescript-eslint',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
   ],
   env: {
     browser: true,
     es6: true,
+    node: true,
   },
   globals: {
     Atomics: 'readonly',
@@ -34,6 +35,9 @@ module.exports = {
     }
   },
   rules: {
+    '@typescript-eslint/no-unused-vars': [2, { args: 'none' }],
+    'import/prefer-default-export': 'off',
+    'import/no-extraneous-dependencies': 'off',
     'max-len': [2, 130, 2],
     'react-hooks/rules-of-hooks': 'error',
     'react/jsx-filename-extension': 'off',
@@ -84,8 +88,17 @@ module.exports = {
     '@typescript-eslint/explicit-member-accessibility': [2, { accessibility: 'off' }],
     '@typescript-eslint/no-object-literal-type-assertion': 0,
     '@typescript-eslint/no-unused-vars': [2, { argsIgnorePattern: '^_' }],
+    '@typescript-eslint/no-unused-vars': ['error', {
+      'vars': 'all',
+      'args': 'none',
+      'ignoreRestSiblings': true,
+    }],
     '@typescript-eslint/no-var-requires': 0,
     '@typescript-eslint/restrict-plus-operands': 0,
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/indent': ['error', 2],
+    '@typescript-eslint/explicit-member-accessibility': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
     'arrow-parens': 0,
     'arrow-spacing': [2, { before: true, after: true }],
     'comma-dangle': 'off',

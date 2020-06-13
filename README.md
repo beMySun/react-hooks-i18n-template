@@ -1,20 +1,11 @@
-# WMS-Lite-FE
+# React-Hooks-i18n-template
 
-# Run WMS-Lite-Admin
- - yarn start:admin
+# Run
 
-# Run WMS-Lite
+Download or Clone this project, run:
 
-- 1. Download i18 translations:
+```bash
+yarn && yarn start
+```
 
-  ```bash
-    yarn i18n
-  ```
-
-- 2. Run project
-  
-  ```bash
-  yarn && yarn start
-  ```
-
-  
+** Enjoy ! **
