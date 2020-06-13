@@ -1,7 +1,4 @@
 {
-  "Banned": "Banned",
-  "Blanja": "Blanja",
-  "Blibli": "Blibli",
-  "Bonus": "Bonus",
-  "Bukalapak": "Bukalapak"
+  "Hello React !": "Hello React !",
+  "I love you xxx times": "I love you {count} times !"
 }

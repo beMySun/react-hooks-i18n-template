@@ -1,8 +1,4 @@
 {
-  "BANNED": "DILARANG",
-  "Banned": "Dilarang",
-  "Blanja": "Blanja",
-  "Blibli": "Blibli",
-  "Bonus": "Bonus",
-  "Bukalapak": "Bukalapak"
+  "Hello React !": "Halo Bereaksi !",
+  "I love you xxx times": "Aku mencintaimu {count} kali !"
 }
