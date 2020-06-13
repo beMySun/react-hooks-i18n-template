@@ -1,13 +1,14 @@
 # React-Hooks-i18n-template
 
-![image](https://github.com/beMySun/react-hooks-i18n-template/blob/master/src/assets/Demo.png)
+![image](https://github.com/beMySun/react-hooks-i18n-template/blob/master/src/assets/i18n.gif)
 
 - React Hooks
 - TypeScript
-- i18n
+- i18n Support
 - Code Splitting
 - Bundle Analyzer
 - Autoprefixer
+- Useful Custom Hooks
 - etc...
 
 # Download
@@ -22,4 +23,4 @@ git@github.com:beMySun/react-hooks-i18n-template.git
 yarn && yarn start
 ```
 
-** Enjoy ! **
+** Have a Try and Enjoy ! **
