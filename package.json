@@ -1,5 +1,6 @@
 {
-  "name": "react-hooks-i18n-template-fe",
+  "name": "react-hooks-i18n-template",
+  "licencs": "MIT",
   "author": "皮小蛋",
   "scripts": {
     "start": "cross-env NODE_ENV=development APP_TYPE=main webpack-dev-server",
