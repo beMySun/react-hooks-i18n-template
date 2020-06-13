@@ -12,9 +12,8 @@
 
 # Download
 
-```
+```bash
 git@github.com:beMySun/react-hooks-i18n-template.git
-
 ```
 
 # Run
