@@ -21,6 +21,7 @@ yarn-debug.log*
 yarn-error.log*
 package-lock.json
 .cache
+yarn.lock
 
 # IDE
 /.idea
