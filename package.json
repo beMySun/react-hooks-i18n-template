@@ -25,7 +25,7 @@
     "history": "^4.10.1",
     "intersection-observer": "^0.7.0",
     "js-cookie": "^2.2.1",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "lrz": "^4.9.40",
     "md5": "^2.2.1",
     "memoize": "^0.1.1",
