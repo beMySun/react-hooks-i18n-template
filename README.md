@@ -23,4 +23,4 @@ git@github.com:beMySun/react-hooks-i18n-template.git
 yarn && yarn start
 ```
 
-** Have a Try and Enjoy ! **
+** Have a Try and Enjoy~ **
