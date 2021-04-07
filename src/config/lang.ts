@@ -1,7 +1,9 @@
-import logoID from '@/assets/logo/logo_32_id.png';
-import logoVN from '@/assets/logo/logo_32_vn.png';
-import logoTW from '@/assets/logo/logo_32_tw.png';
-import logoPH from '@/assets/logo/logo_32_ph.png';
+import logoID from '@/assets/logo192.png';
+
+// import logoID from '@/assets/logo/logo_32_id.png';
+// import logoVN from '@/assets/logo/logo_32_vn.png';
+// import logoTW from '@/assets/logo/logo_32_tw.png';
+// import logoPH from '@/assets/logo/logo_32_ph.png';
 
 const getCountry = () => {
   const country = (window as any).__CID__ || 'id';
@@ -75,50 +77,17 @@ export const getLangOptions = () => langSettings[getCountry()] || defaultLangSet
 
 export const logoSettings = {
   id: logoID,
-  vn: logoVN,
-  tw: logoTW,
-  ph: logoPH,
 };
 
-export const getLogoSrc = () => logoSettings[getCountry()] || logoID;
+export const getLogoSrc = () => logoSettings[getCountry()]
 
 export const registerLinkSettings = {
-  id: 'http://bit.ly/registrasistoku',
-  vn: 'https://docs.google.com/forms/d/e/1FAIpQLSfpTkiZPxhHJHSZ6YRqDFtNX6-nd5_3gMQ1a3sipoATy6nO4w/viewform',
-  tw: 'http://bit.ly/konsultasishopee',
-  ph: 'https://forms.gle/8tEJs2MmvjK545Rz5',
+  id: 'http://bit.ly/oku',
+  vn: 'https://docs.enO4w/viewform',
+  tw: 'http://bit.ly/koee',
+  ph: 'https://forms.gl',
 };
 
 export const getRegisterLink = () => registerLinkSettings[getCountry()];
-
-export const feedbackLinkSettings = {
-  id: 'http://bit.ly/feedbackgudangkuLP',
-  vn: 'https://help.shopee.vn/vn/s/webform',
-  tw: 'http://bit.ly/feedbackgudangkuLP',
-  ph: 'https://forms.gle/xkvdGDTvQEDy9vjg9',
-};
-
-export const getFeedbackLink = () => feedbackLinkSettings[getCountry()];
-
-export const helpLinkSettings = {
-  id: {
-    USERGUIDE_LINK: 'https://sites.google.com/shopee.com/stoku-help/beranda?authuser=0',
-    FEEDBACK_LINK: 'https://docs.google.com/forms/d/1VfGsJIbNI5G-I6WP7538SMdAnqntvS_FoyYm9Tlgaqg/',
-  },
-  vn: {
-    USERGUIDE_LINK: 'https://banhang.shopee.vn/edu/article/3722',
-    FEEDBACK_LINK: 'https://help.shopee.vn/vn/s/webform',
-  },
-  tw: {
-    USERGUIDE_LINK: 'https://drive.google.com/drive/folders/1mAPMEU2BM7BlrJEffX7ts4PQ9FHWe_Ck',
-    FEEDBACK_LINK: 'https://bit.ly/feedbackgdkexisting',
-  },
-  ph: {
-    USERGUIDE_LINK: 'https://seller.shopee.ph/edu/article/5674',
-    FEEDBACK_LINK: 'https://forms.gle/xkvdGDTvQEDy9vjg9',
-  },
-};
-
-export const getHelpLink = () => helpLinkSettings[getCountry()];
 
 export default langMap;
