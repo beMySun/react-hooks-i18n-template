@@ -1,24 +1,18 @@
-/* eslint-disable */
 import reactRefresh from '@vitejs/plugin-react-refresh';
 import legacyPlugin from '@vitejs/plugin-legacy';
 const path = require('path');
 
 // https://cn.vitejs.dev/config/
 export default ({ command, mode }) => {
-  let rollupOptions = {};
-
-  let optimizeDeps = {};
-
-  let alias = {
-    'react-native': 'react-native-web',
-    '@': path.resolve(__dirname, 'src'),
-  };
-
+  console.log(command, mode);
   return {
     base: './',
     root: './',
     resolve: {
-      alias,
+      alias: {
+        'react-native': 'react-native-web',
+        '@': path.resolve(__dirname, 'src'),
+      }
     },
     define: {
       'process.env.REACT_APP_IS_LOCAL': "'true'",
@@ -48,10 +42,10 @@ export default ({ command, mode }) => {
       manifest: false,
       sourcemap: false,
       outDir: 'build',
-      rollupOptions,
+      rollupOptions: {},
     },
     esbuild: {},
-    optimizeDeps,
+    optimizeDeps: {},
     plugins: [
       reactRefresh(),
       legacyPlugin({

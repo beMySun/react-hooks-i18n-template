@@ -3,7 +3,6 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import { Input, Button, Form, Select, message } from 'antd';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
-
 import loginPic from '@/assets/getStartedPlaceholder2.png';
 import { login } from '@/api/account';
 import { changeUserInfo, changeLang } from '@/redux/actions/global';
@@ -44,13 +43,6 @@ const Login: React.FC = () => {
           history.push('/helloworld');
 
           const hasInitialized = response?.data?.merchant?.has_initialized;
-          // if (!hasInitialized) {
-          //   history.push('/onboard/welcome');
-          // } else {
-          //   history.push('/dashboard/myDashboard');
-          // }
-          // history.push('/onboard/welcome');
-
           dispatch(
             changeUserInfo({
               userName,
@@ -82,7 +74,6 @@ const Login: React.FC = () => {
     console.log((window as any).__CID__);
   }, []);
 
-    
   return (
     <div className="login login-content">
       <div className="login-header">
