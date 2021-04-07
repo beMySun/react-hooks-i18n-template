@@ -1820,6 +1820,32 @@
   version "1.1.3"
   resolved "https://npm.garenanow.com/@nodelib%2ffs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
 
+"@rollup/plugin-node-resolve@^11.2.0":
+  version "11.2.1"
+  resolved "https://npm.shopee.io/@rollup%2fplugin-node-resolve/-/plugin-node-resolve-11.2.1.tgz#82aa59397a29cd4e13248b106e6a4a1880362a60"
+  dependencies:
+    "@rollup/pluginutils" "^3.1.0"
+    "@types/resolve" "1.17.1"
+    builtin-modules "^3.1.0"
+    deepmerge "^4.2.2"
+    is-module "^1.0.0"
+    resolve "^1.19.0"
+
+"@rollup/pluginutils@^3.1.0":
+  version "3.1.0"
+  resolved "https://npm.shopee.io/@rollup%2fpluginutils/-/pluginutils-3.1.0.tgz#706b4524ee6dc8b103b3c995533e5ad680c02b9b"
+  dependencies:
+    "@types/estree" "0.0.39"
+    estree-walker "^1.0.1"
+    picomatch "^2.2.2"
+
+"@rollup/pluginutils@^4.1.0":
+  version "4.1.0"
+  resolved "https://npm.shopee.io/@rollup%2fpluginutils/-/pluginutils-4.1.0.tgz#0dcc61c780e39257554feb7f77207dceca13c838"
+  dependencies:
+    estree-walker "^2.0.1"
+    picomatch "^2.2.2"
+
 "@sinonjs/commons@^1.7.0":
   version "1.8.0"
   resolved "https://npm.garenanow.com/@sinonjs%2fcommons/-/commons-1.8.0.tgz#c8d68821a854c555bba172f3b06959a0039b236d"
@@ -1975,6 +2001,10 @@
 "@types/eslint-visitor-keys@^1.0.0":
   version "1.0.0"
   resolved "https://npm.garenanow.com/@types%2feslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#1ee30d79544ca84d68d4b3cdb0af4f205663dd2d"
+
+"@types/estree@0.0.39":
+  version "0.0.39"
+  resolved "https://npm.shopee.io/@types%2festree/-/estree-0.0.39.tgz#e177e699ee1b8c22d23174caaa7422644389509f"
 
 "@types/glob@^7.1.1":
   version "7.1.2"
@@ -2139,6 +2169,12 @@
 "@types/redux-actions@^2.6.1":
   version "2.6.1"
   resolved "https://npm.garenanow.com/@types%2fredux-actions/-/redux-actions-2.6.1.tgz#0940e97fa35ad3004316bddb391d8e01d2efa605"
+
+"@types/resolve@1.17.1":
+  version "1.17.1"
+  resolved "https://npm.shopee.io/@types%2fresolve/-/resolve-1.17.1.tgz#3afd6ad8967c77e4376c598a82ddd58f46ec45d6"
+  dependencies:
+    "@types/node" "*"
 
 "@types/source-list-map@*":
   version "0.1.2"
@@ -3549,6 +3585,10 @@ buffer@^4.3.0:
     base64-js "^1.0.2"
     ieee754 "^1.1.4"
     isarray "^1.0.0"
+
+builtin-modules@^3.1.0:
+  version "3.2.0"
+  resolved "https://npm.shopee.io/builtin-modules/-/builtin-modules-3.2.0.tgz#45d5db99e7ee5e6bc4f362e008bf917ab5049887"
 
 builtin-status-codes@^3.0.0:
   version "3.0.0"
@@ -5181,7 +5221,7 @@ es6-weak-map@^2.0.1:
     es6-iterator "^2.0.3"
     es6-symbol "^3.1.1"
 
-esbuild@^0.9.3:
+esbuild@^0.9.3, esbuild@^0.9.6:
   version "0.9.7"
   resolved "https://npm.shopee.io/esbuild/-/esbuild-0.9.7.tgz#ea0d639cbe4b88ec25fbed4d6ff00c8d788ef70b"
 
@@ -5565,6 +5605,14 @@ estraverse@^4.1.0, estraverse@^4.1.1, estraverse@^4.2.0:
 estraverse@^5.1.0:
   version "5.1.0"
   resolved "https://npm.garenanow.com/estraverse/-/estraverse-5.1.0.tgz#374309d39fd935ae500e7b92e8a6b4c720e59642"
+
+estree-walker@^1.0.1:
+  version "1.0.1"
+  resolved "https://npm.shopee.io/estree-walker/-/estree-walker-1.0.1.tgz#31bc5d612c96b704106b477e6dd5d8aa138cb700"
+
+estree-walker@^2.0.1:
+  version "2.0.2"
+  resolved "https://npm.shopee.io/estree-walker/-/estree-walker-2.0.2.tgz#52f010178c2a4c117a7757cfe942adb7d2da4cac"
 
 esutils@^2.0.2:
   version "2.0.3"
@@ -7069,6 +7117,10 @@ is-glob@^4.0.0, is-glob@^4.0.1, is-glob@~4.0.1:
   dependencies:
     is-extglob "^2.1.1"
 
+is-module@^1.0.0:
+  version "1.0.0"
+  resolved "https://npm.shopee.io/is-module/-/is-module-1.0.0.tgz#3258fb69f78c14d5b815d664336b4cffb6441591"
+
 is-number@^3.0.0:
   version "3.0.0"
   resolved "https://npm.garenanow.com/is-number/-/is-number-3.0.0.tgz#24fd6201a4782cf50561c810276afc7d12d71195"
@@ -7973,6 +8025,10 @@ jest@^25.1.0:
     import-local "^3.0.2"
     jest-cli "^25.5.4"
 
+joycon@^3.0.0:
+  version "3.0.1"
+  resolved "https://npm.shopee.io/joycon/-/joycon-3.0.1.tgz#9074c9b08ccf37a6726ff74a18485f85efcaddaf"
+
 js-cookie@^2.2.1:
   version "2.2.1"
   resolved "https://npm.garenanow.com/js-cookie/-/js-cookie-2.2.1.tgz#69e106dc5d5806894562902aa5baec3744e9b2b8"
@@ -8152,6 +8208,10 @@ json5@^1.0.1:
   resolved "https://npm.garenanow.com/json5/-/json5-1.0.1.tgz#779fb0018604fa854eacbf6252180d83543e3dbe"
   dependencies:
     minimist "^1.2.0"
+
+jsonc-parser@^3.0.0:
+  version "3.0.0"
+  resolved "https://npm.shopee.io/jsonc-parser/-/jsonc-parser-3.0.0.tgz#abdd785701c7e7eaca8a9ec8cf070ca51a745a22"
 
 jsonfile@^4.0.0:
   version "4.0.0"
@@ -9564,7 +9624,7 @@ performance-now@^2.1.0:
   version "2.1.0"
   resolved "https://npm.garenanow.com/performance-now/-/performance-now-2.1.0.tgz#6309f4e0e5fa913ec1c69307ae364b4b377c9e7b"
 
-picomatch@^2.0.4, picomatch@^2.0.5, picomatch@^2.2.1:
+picomatch@^2.0.4, picomatch@^2.0.5, picomatch@^2.2.1, picomatch@^2.2.2:
   version "2.2.2"
   resolved "https://npm.garenanow.com/picomatch/-/picomatch-2.2.2.tgz#21f333e9b6b8eaff02468f5146ea406d345f4dad"
 
@@ -11573,7 +11633,15 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
-rollup@^2.38.5:
+rollup-plugin-esbuild@^3.0.2:
+  version "3.0.2"
+  resolved "https://npm.shopee.io/rollup-plugin-esbuild/-/rollup-plugin-esbuild-3.0.2.tgz#85a1afd59510ef143813b46f515e92a49779a60b"
+  dependencies:
+    "@rollup/pluginutils" "^4.1.0"
+    joycon "^3.0.0"
+    jsonc-parser "^3.0.0"
+
+rollup@^2.38.5, rollup@^2.42.1:
   version "2.44.0"
   resolved "https://npm.shopee.io/rollup/-/rollup-2.44.0.tgz#8da324d1c4fd12beef9ae6e12f4068265b6d95eb"
   optionalDependencies:
@@ -13141,7 +13209,16 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-vite@^2.1.0:
+vite-plugin-singlefile@^0.5.1:
+  version "0.5.1"
+  resolved "https://npm.shopee.io/vite-plugin-singlefile/-/vite-plugin-singlefile-0.5.1.tgz#7211ad34df57ebd9023a257910962322ff9f6c71"
+  dependencies:
+    "@rollup/plugin-node-resolve" "^11.2.0"
+    esbuild "^0.9.6"
+    rollup "^2.42.1"
+    rollup-plugin-esbuild "^3.0.2"
+
+vite@^2.1.5:
   version "2.1.5"
   resolved "https://npm.shopee.io/vite/-/vite-2.1.5.tgz#4857da441c62f7982c83cbd5f42a00330f20c9c1"
   dependencies:
