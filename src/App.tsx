@@ -4,7 +4,9 @@ import { Router } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import Locale from './components/Locale';
 import { store } from './redux/store';
-import HelloWorld from './pages/HelloWord';
+import AppRouter from './AppRouter';
+
+import 'antd/dist/antd.css';
 import './App.less';
 
 const history = createBrowserHistory();
@@ -13,7 +15,7 @@ const AppContainer = () => (
   <Router history={history}>
     <Provider store={store}>
       <Locale>
-        <HelloWorld />
+        <AppRouter />
       </Locale>
     </Provider>
   </Router>
